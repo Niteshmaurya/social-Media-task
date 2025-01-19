@@ -120,7 +120,7 @@ const HomePage = () => {
                           {person.images?.length > 0 ? (
                             person.images.map((image, index) => (
                               <a
-                                href={`${process.env.REACT_APP_BASE_URL}/${image}`}
+                                href={`${process.env.REACT_APP_BASE_URL}/api/v1/${image}`}
                                 key={index}
                                 target="_blank"
                                 rel="noopener noreferrer"
