@@ -38,9 +38,11 @@ const io = new Server(server, {
   cors: {
     origin: allowedOrigin,
     methods: ["GET", "POST"],
+    allowedHeaders: ["Authorization", "Content-Type"],
     credentials: true,
   },
 });
+iio
 
 
 io.on("connection", (socket) => {
