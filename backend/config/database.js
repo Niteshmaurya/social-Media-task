@@ -7,6 +7,7 @@ const dbConnect = () => {
 		.connect(process.env.DATABASE_URL, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
+			connectTimeoutMS: 10000,
 		})
 		.then(() => console.log("DB CONNECTION SUCCESS"))
 		.catch((err) => {
